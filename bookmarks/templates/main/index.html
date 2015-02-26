@@ -45,6 +45,7 @@
         <div class="popBackground">&nbsp;</div>
         <div class="popWindow">
             <form id="addForm" method="POST" action="/bookmarks/add_link/">
+                {% csrf_token %}
                 <div class="winHead">
                     <h2>Add a link</h2>
                 </div>
